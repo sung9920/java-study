@@ -5,8 +5,8 @@ public class Ex17SwitchExample02 {
 	public static void main(String[] args) {
 		
 		int score = 78;
-		int total = score / 10;
-		switch (total) {
+		int grade = score / 10;
+		switch (grade) {
 		case 9:
 			System.out.println("A"); break;
 		case 8:
