@@ -6,13 +6,15 @@ public class Sol {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+
+		int[] numbers = new int[5];
+
+		for (int i = 0; i < numbers.length; i++) {
+			numbers[i] = scanner.nextInt();
+			System.out.print(numbers[i] + " ");
+		}
 		
-		int[] a = new int[5];
 		
-		for(int i = 0; i < 5; i++)
-		a[i] = scanner.nextInt();
-		
-		System.out.println(a[0]+a[1]);	
 		scanner.close();
-	}		
+	}
 }

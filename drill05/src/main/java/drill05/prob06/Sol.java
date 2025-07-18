@@ -7,10 +7,20 @@ public class Sol {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		/* 코드 작성 */
-		System.out.println("int의 최대값: " + Integer.MAX_VALUE);
+		int[] numbers = new int[5];
+		int min = Integer.MAX_VALUE;
 		
+		for (int i = 0; i < numbers.length; i++) {
+			numbers[i] = scanner.nextInt();
+		}
+		
+		for (int number : numbers) {
+			if (number < min)
+				min = number;
+		}
 		scanner.close();
+		
+		System.out.println("최솟값: " + min);
 	}
 
 }
