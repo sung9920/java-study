@@ -19,7 +19,7 @@ public class Sol {
 			for (int j = 0; j < i; j++) {
 				if (numbers[j] == numbers[i])
 					break;
-				if (numbers[j] == numbers[i-1] && numbers[i] != numbers[i - 1])
+				if (j == i-1 && numbers[i] != numbers[i - 1])
 					System.out.print(numbers[i] + " ");
 			}
 		}
