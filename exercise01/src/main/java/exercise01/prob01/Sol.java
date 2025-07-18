@@ -10,7 +10,8 @@ public class Sol {
 		System.out.print("정수: ");
 		int n = scanner.nextInt();
 		
-		
+		if(n < 0) System.out.println("절댓값: " + -n);
+		else System.out.println("절댓값: " + n);
 		scanner.close();
 	}
 
