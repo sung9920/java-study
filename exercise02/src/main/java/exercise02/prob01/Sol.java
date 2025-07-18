@@ -13,20 +13,15 @@ public class Sol {
 		System.out.print("끝 섭씨: ");
 		int endC = scanner.nextInt();
 
-		System.out.print("증가 간: ");
+		System.out.print("증가 간격: ");
 		int step = scanner.nextInt();
-
+		
 		scanner.close();
 
-		
-		/* 코드 작성 */
-				
-		
-		/* 출력 예시 */
 		System.out.println("C\tF");
-		System.out.println("0\t32.0");
-		System.out.println("5\t41.0");
-		System.out.println("10\t41.0");		
+		for(; startC <= endC; startC += step ) {
+			System.out.println(startC+"\t"+(double)(startC * 9 / 5 + 32));
+		}
 	}
 
 }
