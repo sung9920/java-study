@@ -7,12 +7,11 @@ public class Goods {
 	private int countSold;
 	private int countStock;
 	
-	
 	public void showInfo() {
 		System.out.println("상품이름: " + name);
 		System.out.println("가격: " + price);
-		System.out.println("재고개수: " + countStock);
-		System.out.println("팔린개수: " + countSold);
+		System.out.println("재고량: " + countStock);
+		System.out.println("판매량: " + countSold);
 	}
 	
 	public String getName() {
@@ -25,6 +24,9 @@ public class Goods {
 		return price;
 	}
 	public void setPrice(int price) {
+		if(price < 0) {
+			price = 0;
+		}
 		this.price = price;
 	}
 	public int getCountSold() {
