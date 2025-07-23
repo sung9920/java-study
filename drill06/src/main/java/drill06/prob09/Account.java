@@ -6,10 +6,10 @@ public class Account {
 
     public void withdraw(int amount) {
         if (amount > balance) {
-            System.out.println("잔액이 부족합니다.");
+            System.out.println("출금: 잔액부족");
         } else {
             balance -= amount;
-            System.out.println("출금액: " + amount + ", 잔액: " + balance);
+            System.out.println("출금: " + amount + "\n잔액: " + balance);
         }
     }
 

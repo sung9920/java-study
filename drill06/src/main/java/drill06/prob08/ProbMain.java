@@ -6,8 +6,6 @@ public class ProbMain {
 
 	public static void main(String[] args) {
 		Score[] scores = new Score[5];
-		int sum = 0;
-
 		Scanner scanner = new Scanner(System.in);
 
 		for (int i = 0; i < 5; i++) {
@@ -18,7 +16,7 @@ public class ProbMain {
 		}
 		scanner.close();
 
-
+		int sum = 0;
 		for (int i = 0; i < 5; i++) {
 			sum += scores[i].getValue();
 		}

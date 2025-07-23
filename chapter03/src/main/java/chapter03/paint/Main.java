@@ -11,10 +11,11 @@ public class Main {
 			point1.setY(20);
 	        canvas.drawPoint(point1);
 
+//	        point1.disappear();
+	        point1.show(false);
+	        
 	        // 사용자가 (100, 200) 위치를 클릭한 상황
-	        Point point2 = new Point();
-			point2.setX(100);
-			point2.setY(200);
+	        Point point2 = new Point(100, 200);
 	        canvas.drawPoint(point2);
 	} 
 }
