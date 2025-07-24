@@ -1,9 +1,10 @@
 package chapter03.paint;
 
 public class Canvas {
-	public void drawPoint(Point point) {
-		point.show();
-	}
+	
+//	public void drawPoint(Point point) {
+//		point.show();
+//	}
 	
 //	public void drawColorPoint(ColorPoint colorPoint) {
 //		colorPoint.show();
@@ -18,7 +19,11 @@ public class Canvas {
 //	}
 //	
 
-	public void drawShape(Shape shape) {
-		shape.draw();
+//	public void drawShape(Shape shape) {
+//		shape.draw();
+//	}
+	
+	public void draw(Drawable drawable) {
+		drawable.draw();
 	}
 }

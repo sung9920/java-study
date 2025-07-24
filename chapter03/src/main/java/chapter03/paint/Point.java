@@ -1,6 +1,6 @@
 package chapter03.paint;
 
-public class Point {
+public class Point implements Drawable {
 
 	private int x;
 	private int y;
@@ -12,6 +12,10 @@ public class Point {
 
 	public Point() {
 
+	}
+	
+	public void draw() {
+		show();
 	}
 
 	public void show() {

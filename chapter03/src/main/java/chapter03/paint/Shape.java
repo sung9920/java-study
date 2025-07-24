@@ -1,11 +1,7 @@
 package chapter03.paint;
 
-public class Shape {
+public abstract class Shape implements Drawable{
 	private Point[] point;
 	private String fillColor;
 	private String lineColor;
-	
-	public void draw() {
-		System.out.println("구현불가");
-	}
 }
