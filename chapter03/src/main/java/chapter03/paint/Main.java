@@ -17,5 +17,8 @@ public class Main {
 	        // 사용자가 (100, 200) 위치를 클릭한 상황
 	        Point point2 = new Point(100, 200);
 	        canvas.drawPoint(point2);
+	        
+	        ColorPoint point3 = new ColorPoint(50, 60, "red");
+	        canvas.drawColorPoint(point3);
 	} 
 }

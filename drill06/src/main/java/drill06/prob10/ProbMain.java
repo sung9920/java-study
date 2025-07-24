@@ -15,5 +15,4 @@ public class ProbMain {
 		System.out.println("제곱: " + MathTool.square(number));
 		System.out.println("2배: " + MathTool.doubleIt(number));
 	}
-
 }
