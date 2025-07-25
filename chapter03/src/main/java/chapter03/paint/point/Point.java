@@ -1,4 +1,6 @@
-package chapter03.paint;
+package chapter03.paint.point;
+
+import chapter03.paint.canvas.Drawable;
 
 public class Point implements Drawable {
 

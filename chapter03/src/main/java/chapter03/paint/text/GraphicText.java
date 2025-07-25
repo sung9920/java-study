@@ -1,4 +1,6 @@
-package chapter03.paint;
+package chapter03.paint.text;
+
+import chapter03.paint.canvas.Drawable;
 
 public class GraphicText implements Drawable{
 	private String text;

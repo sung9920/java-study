@@ -1,4 +1,4 @@
-package chapter03.paint;
+package chapter03.paint.point;
 
 public class ColorPoint extends Point{
 	private String color;

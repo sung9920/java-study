@@ -1,4 +1,4 @@
-package chapter03.paint;
+package chapter03.paint.shape;
 
 public class Circle extends Shape{
 	private int radius;

@@ -7,6 +7,12 @@ public class Rectangle extends Shape implements Resizable  {
 	}
 
 	@Override
+	public void resize(double rate) {
+		setWidth(getWidth() * rate);
+		setHeight(getHeight() * rate);
+	}
+	
+	@Override
 	public double getArea() {
 		return getWidth() * getHeight();
 	}
@@ -16,10 +22,6 @@ public class Rectangle extends Shape implements Resizable  {
 		return (getWidth() + getHeight()) * 2;
 	}
 
-	@Override
-	public void resize(double rate) {
-		setWidth(getWidth() * rate);
-		setHeight(getHeight() * rate);
-	}
+	
 
 }

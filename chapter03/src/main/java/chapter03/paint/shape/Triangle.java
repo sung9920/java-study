@@ -1,4 +1,4 @@
-package chapter03.paint;
+package chapter03.paint.shape;
 
 public class Triangle extends Shape{
 	@Override
