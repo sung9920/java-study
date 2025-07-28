@@ -14,8 +14,7 @@ public class RectTriangle extends Shape {
 	@Override
 	public double getPerimeter() {
 		return getWidth() + getHeight() + 
-				Math.sqrt(getWidth() * getWidth() +
-						getHeight() * getHeight());
+			   Math.sqrt(getWidth() * getWidth() + getHeight() * getHeight());
 		
 	}
 }

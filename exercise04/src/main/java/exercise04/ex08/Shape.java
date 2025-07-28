@@ -13,7 +13,6 @@ public abstract class Shape {
 		return width;
 	}
 
-
 	public void setWidth(double width) {
 		this.width = width;
 	}
