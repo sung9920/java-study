@@ -1,10 +1,33 @@
 package chpter04.collection;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class LinkedListQueueExample {
 
 	public static void main(String[] args) {
-		// TODO 자동 생성된 메소드 스텁
-
+		Queue<String> queue = new LinkedList<>();
+		
+		queue.offer("마이콜");
+		queue.offer("둘리");
+		queue.offer("또치");
+		
+		while(!queue.isEmpty()) {
+			String s = queue.poll();
+			System.out.println(s);
+		}
+		
+		// 비어 있는 경우는 null을 반환한다.
+		System.out.println(queue.poll());
+		
+		queue.offer("마이콜");
+		queue.offer("둘리");
+		queue.offer("또치");
+		
+		System.out.println(queue.poll());
+		System.out.println(queue.peek());
+		System.out.println(queue.poll());
+		
 	}
 
 }
