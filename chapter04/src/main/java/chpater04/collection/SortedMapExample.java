@@ -1,4 +1,4 @@
-package chpter04.collection;
+package chpater04.collection;
 
 import java.util.Map;
 import java.util.TreeMap;

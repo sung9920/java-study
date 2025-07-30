@@ -1,4 +1,4 @@
-package chpter04.collection;
+package chpater04.collection;
 
 import java.util.HashMap;
 import java.util.Map;
