@@ -1,4 +1,4 @@
-package chpater04.collection;
+package chapter04.collection;
 
 import java.util.Arrays;
 import java.util.HashMap;

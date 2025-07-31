@@ -1,4 +1,4 @@
-package chpater04.collection;
+package chapter04.collection;
 
 import java.util.Iterator;
 import java.util.List;

@@ -1,13 +1,13 @@
-package chpater04.collection;
+package chapter04.collection;
 
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 
-public class LinkedListExample {
+public class ArrayListExample {
 
 	public static void main(String[] args) {
-		List<String> list = new LinkedList<>();
+		List<String> list = new ArrayList<>();
 		
 		list.add("둘리");
 		list.add("마이콜");
@@ -43,3 +43,6 @@ public class LinkedListExample {
 	}
 
 }
+
+
+
