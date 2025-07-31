@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="exercise04" />
+        <module name="drill02" />
+        <module name="exercise03" />
+        <module name="drill01" />
+        <module name="exercise02" />
+        <module name="chapter03" />
+        <module name="drill04" />
+        <module name="exercise01" />
+        <module name="drill03" />
+        <module name="chapter04" />
+        <module name="chapter01" />
+        <module name="drill06" />
+        <module name="drill05" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
