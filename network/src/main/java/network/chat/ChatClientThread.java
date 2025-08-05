@@ -20,6 +20,7 @@ public class ChatClientThread extends Thread {
 					break;
 				}
 				System.out.println(message);
+
 			}
 
 		} catch (IOException e) {

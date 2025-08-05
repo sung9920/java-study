@@ -30,12 +30,20 @@ public class ChatClient {
 			System.out.print("닉네임>>" );
 			String nickname = scanner.nextLine();
 			pw.println("join:" + nickname);
+			
+			String response = br.readLine();
+			if(response=="join:ok") {
+				System.out.println("채팅방에 입장했습니다.");
+			} else {
+				System.out.println("채팅방 입장에 실패했습니다.");
+			}
+			
 			new ChatClientThread(br).start();
 			
 			while(true) {
 //				System.out.print(">> ");
 				String line = scanner.nextLine();
-				
+			
 				if("quit".equals(line)) {
 					pw.println("quit");
 					break;
