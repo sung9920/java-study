@@ -1,4 +1,4 @@
-package network.echo;
+package network.chat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,40 +7,41 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
-public class EchoClient {
+public class ChatClient {
 	private static final String SERVER_IP = "127.0.0.1";
 	
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in, "MS949");
+		Scanner scanner = null;
 		Socket socket = null;
 		
 		try {
+			scanner = new Scanner(System.in, "MS949");
+			
 			socket = new Socket();
 			
-			socket.connect(new InetSocketAddress(SERVER_IP, EchoServer.PORT));
+			socket.connect(new InetSocketAddress(SERVER_IP, ChatServer.PORT));
 			
-			PrintWriter pw = new PrintWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF-8"), true);
-			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
-
+			PrintWriter pw = new PrintWriter(new OutputStreamWriter(socket.getOutputStream(), StandardCharsets.UTF_8), true);
+			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8));
+			
+			System.out.print("닉네임>>" );
+			String nickname = scanner.nextLine();
+			pw.println("join:" + nickname);
+			new ChatClientThread(br).start();
+			
 			while(true) {
-				System.out.print(">> ");
+//				System.out.print(">> ");
 				String line = scanner.nextLine();
 				
 				if("quit".equals(line)) {
+					pw.println("quit");
 					break;
+				} else {
+					pw.println("message:" + line);
 				}
-				
-				pw.println(line);
-				String data = br.readLine();
-				
-				if(data == null) {
-					log("closed by server");
-					break;
-				}
-				
-				System.out.println("<< " + data);
 			}
 			
 		} catch(IOException e) {
